@@ -1,6 +1,7 @@
-# CursusPython 2025 - Avond 3 - micro:Python
+# CursusPython 2025 - Avond 3 - microPython
 
 ## Microcontrollers
+
   - Raspberry Pi Pico
   - ESP32
   - Micro:bit
