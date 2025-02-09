@@ -1,4 +1,4 @@
-# CursusPython_2025_Avond_3
+# CursusPython 2025 - Avond 3 - micro:Python
 
 ## Microcontrollers
   - Raspberry Pi Pico
