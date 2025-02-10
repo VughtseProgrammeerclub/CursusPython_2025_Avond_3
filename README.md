@@ -4,7 +4,7 @@
 
 |**Raspberry Pi Pico**|**ESP32**|**Micro:bit**|
 |----------|----------|----------|
-|afbeelding 1|Afbeeling 2|![Afbeelding](https://example.com/image.png)|
+|afbeelding 1|Afbeeling 2|![Afbeelding](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/microbit-overview-1-5.png)|
 
 ## Python vs microPython
 |**Kenmerk**               |**Python**                      |**MicroPython**                   |
