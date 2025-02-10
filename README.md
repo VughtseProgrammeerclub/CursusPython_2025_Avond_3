@@ -4,7 +4,7 @@
 
 |**Raspberry Pi Pico**|**ESP32**|**Micro:bit**|
 |----------|----------|----------|
-|![RPi Pico](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/Raspberry_Pi_Pico_top_and_bottom.jpg)|![ESP32](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg)|![micro:bit](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/microbit-overview-1-5.png)|
+|![RPi Pico](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/Raspberry_Pi_Pico_top_and_bottom.jpg)|![ESP32](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg)|![micro:bit](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/microbit-overview-1-5-1200.png)|
 
 |**Raspberry Pi Pico**|**ESP32**|**Micro:bit**|
 |----------|----------|----------|
