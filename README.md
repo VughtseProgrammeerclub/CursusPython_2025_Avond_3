@@ -36,6 +36,7 @@ De *MicroPython interpreter* is een programma dat MicroPython-code direct uitvoe
 MicroPython is speciaal ontworpen voor kleine, embedded systemen met beperkte rekenkracht en geheugen. In tegenstelling tot het gewone Python, draait het zonder besturingssysteem en werkt het direct met de hardware.
 
 **Waar bevindt de MicroPython interpreter zich?**
+
 De MicroPython Interpreter bevindt zich op de microcontroller zelf. Dit betekent:
   - Opgeslagen in het flashgeheugen van de microcontroller.
   - Start automatisch op wanneer de microcontroller wordt ingeschakeld.
@@ -44,6 +45,7 @@ De MicroPython Interpreter bevindt zich op de microcontroller zelf. Dit betekent
 Wanneer je een script naar de microcontroller uploadt (via Thonny, Mu Editor of een seriële verbinding), wordt het door de interne MicroPython interpreter uitgevoerd.
 
 **Hoe werkt de MicroPython interpreter?**
+
 - Je schrijft code in een editor zoals Thonny of Mu Editor.
 - De code wordt als tekstbestand (met de extensie *'.py.'* geüpload naar de microcontroller.
 - De MicroPython interpreter op de microcontroller voert de code direct uit.
