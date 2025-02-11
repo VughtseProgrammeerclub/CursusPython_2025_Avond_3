@@ -145,5 +145,13 @@ while True:
     sleep(500)
 ```
 
-Klik op de groene knop 
+Klik op de groene knop ![Startknop](thonny_startknop.png)  of druk op de toets [F5].
+
+## Niet vergeten: Opslaan
+
+Kies in het menu *File > Save as...*
+
+![Eerste programma](thonny_stap09.png)
+![Eerste programma](thonny_stap08.png)
+
 {Bestanden op de micro:bit}
