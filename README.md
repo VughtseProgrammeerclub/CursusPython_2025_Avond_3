@@ -79,7 +79,7 @@ We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eers
 |**Shell**  |Het deel van Thonny dat de uitvoer van je code laat zien en waar je ook direct opdrachten kan invoeren. De Shell in Thonny fungeert als een REPL, wat betekent dat je hier direct Python-commando’s kunt invoeren en meteen de uitvoer kunt zien. <br>**REPL (Read-Evaluate-Print-Loop):** Een interactieve omgeving waarin je Python-commando’s in real-time kunt uitvoeren. Thonny bevat een ingebouwde REPL, toegankelijk via de Shell, waarmee je direct commando’s naar de micro:bit kunt sturen en de uitvoer meteen kunt zien. De REPL maakt gebruik van de interpreter om elk commando direct te evalueren en het resultaat ervan in de Shell te tonen. Dit maakt het mogelijk om snel te experimenteren met kleine stukjes code, in tegenstelling tot de editor, waar je complete programma’s schrijft die pas na uitvoering worden getest.|
 |**Files**  |Bij de eerdere Pythonlessen was de eigen 'verkenner' van Thonny nog niet zo belangrijk, maar bij microcontrollers als de Raspberry Pi Pico en de micro:bit kan je de programmacode ook op de controller zelf opslaan. Met de Verkenner van Windows zijn deze echter niet zichtbaar.|
 
-In Thonny kan je via het menu *View* vensters zoichtbaar maken:
+In Thonny kan je via het menu *View* vensters zichtbaar maken:
 
 ![Venster Thonny openen](thonny_vensters.png)
 
@@ -106,4 +106,12 @@ Gebruik hiervoor een micro-USB-kabel. Bij de micro:bit wordt een kort USB-kabelt
 ![Onderin het scherm](thonny_stap03.png)
 
 Klik onderin het scherm. Je ziet dat de micro:bit al wordt herkend en in dit geval gebruik maakt van de poort *COM3*.
+
+![Onderin het scherm](thonny_stap04.png)
+
+In het editor-venster wordt aangegeven dat er iets niet in orde is. Dat gaan we nu oplossen!
+
+3. MicroPython interpreter installeren
+
+
 {Bestanden op de micro:bit}
