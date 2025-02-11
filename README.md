@@ -94,4 +94,14 @@ Op deze micro:bit is geen MicroPython interpreter geïnstalleerd.
 Onderin het scherm zie je dat Thonny nog is ingesteld op de 'gewone'versie van Python waarmee we in de twee eerste lessen hebben gewerkt.
 
 2. Sluit de micro:bit aan
+
+![micro:bit aansluiten](microbit_aansluiten.jpg)
+
+*Bron: https://www.elecfreaks.com/blog/post/start-your-microbit-programming-trip.html*
+
+Gebruik hiervoor een micro-USB-kabel. Bij de micro:bit wordt een kort USB-kabeltje geleverd, waarschijnlijk werkt het handiger met een langere kabel.
+
+- Op de micro:bit zit ook een aansluiting voor een batterij. Het is geen probleem om de batterij tegelijk met de USB-kabel te gebruiken.
+
+
 {Bestanden op de micro:bit}
