@@ -83,8 +83,15 @@ In Thonny kan je via het menu *View* vensters zoichtbaar maken:
 
 ![Venster Thonny openen](thonny_vensters.png)
 
-**Micro:bit aansluiten**
-Op deze micro:bit is geen MicroPython interpreter geïnstalleerd. 
-1 Start Thonny
+**Micro:bit (of een andere microcontroller) aansluiten**
 
+Op deze micro:bit is geen MicroPython interpreter geïnstalleerd. 
+
+1. Start Thonny
+
+![Thonny start](thonny_stap01.png)
+
+Onderin het scherm zie je dat Thonny nog is ingesteld op de 'gewone'versie van Python waarmee we in de twee eerste lessen hebben gewerkt.
+
+2. Sluit de micro:bit aan
 {Bestanden op de micro:bit}
