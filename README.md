@@ -131,6 +131,19 @@ Als je dit hebt ingesteld klik je op de knop *Install* en sluit je de twee pop-u
 
 4. Het eerste MicroPython-programma voor de micro🫦
 
+![Eerste programma](thonny_stap08.png)
 
+Schrijf (of kopieer) het programma in de editor.
 
+```python
+from microbit import *
+
+while True:
+    display.show(Image.HEART)
+    sleep(500)
+    display.show(Image.HEART_SMALL)
+    sleep(500)
+```
+
+Klik op de groene knop 
 {Bestanden op de micro:bit}
