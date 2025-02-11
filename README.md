@@ -70,7 +70,7 @@ De MicroPython interpreter wordt opgeslagen in het flash-geheugen van de microco
 
 ## Thonny en de micro:bit
 
-We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eerst nog even naar de belangrijkste vensters in Thonny, we gaan een micro:bit aansluiten en ons eerste MicroPython-programma op de micro:bit zetten.
+We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eerst nog even naar de belangrijkste vensters in Thonny, we gaan een micro:bit aansluiten, de interpreter installeren en ons eerste MicroPython-programma op de micro:bit zetten.
 
 **Welke Thonny-vensters waren ook al weer belangrijk?**
 |Venster|Waarvoor?|
@@ -79,5 +79,12 @@ We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eers
 |**Shell**  |Het deel van Thonny dat de uitvoer van je code laat zien en waar je ook direct opdrachten kan invoeren. De Shell in Thonny fungeert als een REPL, wat betekent dat je hier direct Python-commando’s kunt invoeren en meteen de uitvoer kunt zien. <br>**REPL (Read-Evaluate-Print-Loop):** Een interactieve omgeving waarin je Python-commando’s in real-time kunt uitvoeren. Thonny bevat een ingebouwde REPL, toegankelijk via de Shell, waarmee je direct commando’s naar de micro:bit kunt sturen en de uitvoer meteen kunt zien. De REPL maakt gebruik van de interpreter om elk commando direct te evalueren en het resultaat ervan in de Shell te tonen. Dit maakt het mogelijk om snel te experimenteren met kleine stukjes code, in tegenstelling tot de editor, waar je complete programma’s schrijft die pas na uitvoering worden getest.|
 |**Files**  |Bij de eerdere Pythonlessen was de eigen 'verkenner' van Thonny nog niet zo belangrijk, maar bij microcontrollers als de Raspberry Pi Pico en de micro:bit kan je de programmacode ook op de controller zelf opslaan. Met de Verkenner van Windows zijn deze echter niet zichtbaar.|
 
+In Thonny kan je via het menu *View* vensters zoichtbaar maken:
+
+![Venster Thonny openen](thonny_vensters.png)
+
+**Micro:bit aansluiten**
+Op deze micro:bit is geen MicroPython interpreter geïnstalleerd. 
+1 Start Thonny
 
 {Bestanden op de micro:bit}
