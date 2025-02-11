@@ -153,7 +153,7 @@ Kies in het menu *File > Save as...*
 
 ![Eerste programma](thonny_stap09.png)
 
-Je hebt de keuze om het programma op te slaan op jouw computer of op de micro:bit zelf. Als je wilt dat jouw programma het ook doet als de micro:bit niet is aangesloten op Thonny, geef het dan de naam ***main.py*** en sla het op op de micro:bit. Als het programma op de micro:bit nog loopt moet je in Thony eerst op de stopknop  ![Startknop](thonny_startknop.png) klikken.
+Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de micro:bit** zelf. Als je wilt dat jouw programma het ook doet als de micro:bit niet is aangesloten op Thonny, geef het dan de naam ***main.py*** en sla het op op de micro:bit. Als het programma op de micro:bit nog loopt moet je in Thony eerst op de stopknop  ![Startknop](thonny_stopknop.png) klikken.
 
 
 
