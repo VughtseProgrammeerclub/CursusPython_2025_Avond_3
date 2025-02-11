@@ -17,7 +17,7 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 | ![RPi Pico](Raspberry_Pi_Pico_top_and_bottom-1200.jpg) | ![ESP32](SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg) | ![micro:bit](microbit-overview-1-5-1200.png)           |
 |Dit is de eenvoudigste uitvoering. Er zijn ook nieuwere uitvoeringen met o.a. WiFi.|Dit is maar één voorbeeld, er bestaan vele uitvoeren van ESP32's.|Dit is V1-uitvoering (de originele), inmiddels is er ook een V2-uitvoering met een luidspreker, microfoon en meer geheugen.|
 
-## Python vs microPython
+## Python vs MicroPython
 |**Kenmerk**               |**Python**                      |**MicroPython**                   |
 |:-------------------------|:-------------------------------|:------------------------------------|
 | **Doelgroep**            | Algemeen gebruik op computers  | Microcontrollers (zoals micro:bit, ESP32) |
@@ -155,6 +155,9 @@ Kies in het menu *File > Save as...*
 
 Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de micro:bit** zelf. Als je wilt dat jouw programma het ook doet als de micro:bit niet is aangesloten op Thonny, geef het dan de naam ***main.py*** en sla het op op de micro:bit. Als het programma op de micro:bit nog loopt moet je in Thony eerst op de stopknop  ![Startknop](thonny_stopknop.png) klikken.
 
+![Opgeslagen programma](thonny_stap10.png)
+
+Het programma is opgeslagen op de computer en op de micro:bit zelf.
 
 
 {Bestanden op de micro:bit}
