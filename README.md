@@ -2,9 +2,19 @@
 
 ## Microcontrollers
 
+Een microcontroller is een compacte schakeling met een processor, geheugen en I/O (Input/Output), gebruikt voor het aansturen van sensoren en motoren.
+
+Relevante microcontrollers:
+
+- RPi Pico: Gebruikt de RP2040, een dual-core ARM Cortex-M0+.
+- ESP32: Van Espressif, met WiFi en Bluetooth, ideaal voor IoT (Internet of Things).
+- micro:bit: Met Nordic nRF52833 of nRF51822, inclusief Bluetooth en sensoren.
+
+Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
+
 |**Raspberry Pi Pico**|**ESP32**|**Micro:bit**|
 |----------|----------|----------|
-|![RPi Pico](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/Raspberry_Pi_Pico_top_and_bottom-1200.jpg)|![ESP32](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg)|![micro:bit](https://github.com/VughtseProgrammeerclub/CursusPython_2025_Avond_3/blob/main/microbit-overview-1-5-1200.png)|
+| ![RPi Pico](Raspberry_Pi_Pico_top_and_bottom-1200.jpg) | ![ESP32](SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg) | ![micro:bit](microbit-overview-1-5-1200.png)           |
 |Dit is de eenvoudigste uitvoering. Er zijn ook nieuwere uitvoeringen met o.a. WiFi.|Dit is maar één voorbeeld, er bestaan vele uitvoeren van ESP32's.|Dit is V1-uitvoering (de originele), inmiddels is er ook een V2-uitvoering met een luidspreker, microfoon en meer geheugen.|
 
 ## Python vs microPython
