@@ -117,5 +117,20 @@ In het editor-venster wordt aangegeven dat er iets niet in orde is. Dat gaan we 
 
 Kies in het menu *Run > Configure interpreter...*
 
+![Install or update MicroPython](thonny_stap06.png)
+
+Klik op *Install or update MicroPython*
+
+![Install or update MicroPython](thonny_stap07.png)
+
+- Dit voorbeeld gaat over micro:bit V1, deze gebruikt de processor **nRF51**. Een micro:bit V2 heeft een nRF52 aan boord.
+- We gaan werken met de aanbevolen variant van de MicroPython interpreter: **BBC micro:bit V1 (original simplifies API)**
+- En met de nieuwste versie: **1.1.1**
+
+Als je dit hebt ingesteld klik je op de knop *Install* en sluit je de twee pop-ups.
+
+4. Het eerste MicroPython-programma voor de micro🫦
+
+
 
 {Bestanden op de micro:bit}
