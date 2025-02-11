@@ -113,5 +113,9 @@ In het editor-venster wordt aangegeven dat er iets niet in orde is. Dat gaan we 
 
 3. MicroPython interpreter installeren
 
+![Menu Run > Configure interpreter...](thonny_stap05.png)
+
+Kies in het menu *Run > Configure interpreter...*
+
 
 {Bestanden op de micro:bit}
