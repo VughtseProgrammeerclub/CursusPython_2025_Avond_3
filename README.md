@@ -40,13 +40,10 @@ Wanneer je een script naar de microcontroller uploadt (via Thonny, Mu Editor of 
 - Bij een herstart blijft het programma draaien, zolang het in het bestand als main.py is opgeslagen op de microcontroller.
 - Wil je live testen? Je kunt de REPL (Read-Eval-Print Loop) gebruiken, waarmee je direct opdrachten aan de MicroPython interpreter geeft via een seriële verbinding.
 
-**Hoe komt de microPython interpreter op de microcontroller?**
+**Hoe komt de MicroPython interpreter op de microcontroller?**
 
-Dat hangt af van de programmeeromgeving die je gebruikt:
-- **Thonny** zal de interpreter bij de eerste keer dat je een programma op de microcontroller wilt uitvoeren direct proberen te uploaden. Als dit niet lukt dan kan je de interpreter zelf vanuit Thonny in het flashgeheugen van de microcontroller zetten. We komen hier nog op terug.
-- Bij **andere programmeeromgevingen** moet je de interpreter handmatig installeren.
-  
-## Enkele programmeeromgevingen om micro:bit met Python te programmeren:
+Dat hangt af van de programmeeromgeving die je gebruikt. Dit zijn de meest bekende omgevingen:
+
 - Mu-editor (https://codewith.mu/)
 - Python.microbit.org (https://python.microbit.org/v/3)
 - MakeCode (https://makecode.microbit.org/)
@@ -54,11 +51,23 @@ Dat hangt af van de programmeeromgeving die je gebruikt:
 
 In deze cursus hebben we tot nu toe gewerkt met Thonny en hier gaan we nu ook mee door.
 
-Welke Thonny-vensters waren ook al weer belangrijk?
+- **Thonny** zal de interpreter bij de eerste keer dat je een programma op de microcontroller wilt uitvoeren direct proberen te uploaden. Als dit niet lukt dan kan je de interpreter zelf vanuit Thonny in het flashgeheugen van de microcontroller zetten. We komen hier nog op terug.
+- Bij **andere programmeeromgevingen** moet je de interpreter handmatig installeren.
+  
+**Kan ik de MicroPython interpreter ook weer verwijderen?**
+
+De MicroPython interpreter wordt opgeslagen in het flash-geheugen van de microcontroller. Dit betekent dat het 'bestand' van buitenaf niet zichtbaar/toegangelijk is (zie verderop de beschrijving van het Thonny-venster *Files*). Op de micro:bit kan je de interpreter verwijderen door in de programeeromgeving https://makecode.microbit.org/ een programma te schrijven en dit vanuit die omgeving te uploaden naar de micro:bit. Je kan ook een hex-bestand dat gemaakt is in MakeCode via de Windows verkenner kopiëren naar de micri:bit. Dit overschrijft alles wat eerder met Thonny op de micro:bit is gezet.
+
+## Thonny en de micro:bit
+
+We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eerst nog even naar de belangrijkste vensters in Thonny, we gaan een micro:bit aansluiten en ons eerste MicroPython-programma op de micro:bit zetten.
+
+**Welke Thonny-vensters waren ook al weer belangrijk?**
 |Venster|Waarvoor?|
-|-----|-----|
+|:-----|:-----|
 |**Editor** |Hierin schrijven we onze programma's. Zolang het programma in de editor staat is het een gewoon tekstbestand dat we ook hadden schrijven in bijvoorbeeld het kladblok van Windows of in Word. Om aan te geven dat het een Pythonprogramma is krijgt het bestand de extensie *'.py'*.|
 |**Shell**  |Het deel van Thonny dat de uitvoer van je code laat zien en waar je ook direct opdrachten kan invoeren. De Shell in Thonny fungeert als een REPL, wat betekent dat je hier direct Python-commando’s kunt invoeren en meteen de uitvoer kunt zien. <br>**REPL (Read-Evaluate-Print-Loop):** Een interactieve omgeving waarin je Python-commando’s in real-time kunt uitvoeren. Thonny bevat een ingebouwde REPL, toegankelijk via de Shell, waarmee je direct commando’s naar de micro:bit kunt sturen en de uitvoer meteen kunt zien. De REPL maakt gebruik van de interpreter om elk commando direct te evalueren en het resultaat ervan in de Shell te tonen. Dit maakt het mogelijk om snel te experimenteren met kleine stukjes code, in tegenstelling tot de editor, waar je complete programma’s schrijft die pas na uitvoering worden getest.|
 |**Files**  |Bij de eerdere Pythonlessen was de eigen 'verkenner' van Thonny nog niet zo belangrijk, maar bij microcontrollers als de Raspberry Pi Pico en de micro:bit kan je de programmacode ook op de controller zelf opslaan. Met de Verkenner van Windows zijn deze echter niet zichtbaar.|
+
 
 {Bestanden op de micro:bit}
