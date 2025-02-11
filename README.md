@@ -1,4 +1,4 @@
-# CursusPython 2025 - Avond 3 - microPython
+# CursusPython 2025 - Avond 3 - MicroPython
 
 ## Microcontrollers
 
@@ -103,5 +103,7 @@ Gebruik hiervoor een micro-USB-kabel. Bij de micro:bit wordt een kort USB-kabelt
 
 - Op de micro:bit zit ook een aansluiting voor een batterij. Het is geen probleem om de batterij tegelijk met de USB-kabel te gebruiken.
 
+![Onderin het scherm](thonny_stap03.png)
 
+Klik onderin het scherm. Je ziet dat de micro:bit al wordt herkend en in dit geval gebruik maakt van de poort *COM3*.
 {Bestanden op de micro:bit}
