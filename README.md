@@ -22,7 +22,7 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 |:-------------------------|:-------------------------------|:------------------------------------|
 | **Doelgroep**            | Algemeen gebruik op computers  | Microcontrollers (zoals micro:bit, ESP32) |
 | **Taalversie**           | Gebaseerd op Python 3          | Afgeslankte versie van Python 3  |
-| **Interpreter**          | CPython (standaard)            | MicroPython-interpreter          |
+| **Interpreter**          | CPython (standaard)            | MicroPython interpreter          |
 | **Modules**              | Grote standaardbibliotheek     | Kleinere, geoptimaliseerde bibliotheek |
 | **Besturingssysteem nodig?** | Ja (Windows, macOS, Linux)   | Nee, draait direct op de microcontroller |
 | **Geheugengebruik**      | Vereist veel RAM en opslag     | Geoptimaliseerd voor weinig geheugen |
@@ -41,7 +41,7 @@ De MicroPython Interpreter bevindt zich op de microcontroller zelf. Dit betekent
   - Start automatisch op wanneer de microcontroller wordt ingeschakeld.
   - Geen apart besturingssysteem nodig, het draait direct op de hardware.
 
-Wanneer je een script naar de microcontroller uploadt (via Thonny, Mu Editor of een seriële verbinding), wordt het door de interne MicroPython-interpreter uitgevoerd.
+Wanneer je een script naar de microcontroller uploadt (via Thonny, Mu Editor of een seriële verbinding), wordt het door de interne MicroPython interpreter uitgevoerd.
 
 **Hoe werkt de MicroPython interpreter?**
 - Je schrijft code in een editor zoals Thonny of Mu Editor.
@@ -124,7 +124,7 @@ Klik op *Install or update MicroPython*
 ![Install or update MicroPython](thonny_stap07.png)
 
 - Dit voorbeeld gaat over micro:bit V1, deze gebruikt de processor **nRF51**. Een micro:bit V2 heeft een nRF52 aan boord.
-- We gaan werken met de aanbevolen variant van de MicroPython interpreter: **BBC micro:bit V1 (original simplifies API)**
+- We gaan werken met de aanbevolen variant van de MicroPython interpreter: **BBC micro:bit V1 (original simplified API)**
 - En met de nieuwste versie: **1.1.1**
 
 Als je dit hebt ingesteld klik je op de knop *Install* en sluit je de twee pop-ups.
@@ -153,11 +153,10 @@ Kies in het menu *File > Save as...*
 
 ![Eerste programma](thonny_stap09.png)
 
-Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de micro:bit** zelf. Als je wilt dat jouw programma het ook doet als de micro:bit niet is aangesloten op Thonny, geef het dan de naam ***main.py*** en sla het op op de micro:bit. Als het programma op de micro:bit nog loopt moet je in Thony eerst op de stopknop  ![Startknop](thonny_stopknop.png) klikken.
+Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de micro:bit** zelf. Als je wilt dat jouw programma het ook doet als de micro:bit niet is aangesloten op Thonny, geef het dan de naam ***main.py*** en sla het op op de micro:bit. Als het programma op de micro:bit nog loopt moet je in Thonny eerst op de stopknop  ![Startknop](thonny_stopknop.png) klikken.
 
 ![Opgeslagen programma](thonny_stap10.png)
 
-Het programma is opgeslagen op de computer en op de micro:bit zelf.
+Het programma is opgeslagen op de computer **en** op de micro:bit zelf.
 
 
-{Bestanden op de micro:bit}
