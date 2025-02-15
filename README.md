@@ -6,7 +6,7 @@
   * [Thonny en de micro:bit](#thonny-en-de-micro-bit)
   * [Niet vergeten: Opslaan](#niet-vergeten--opslaan)
   * [De microbitbibliotheek](#de-microbitbibliotheek)
-  * [Functies in de MicroPython `microbit`-bibliotheek](#functies-in-de-micropython--microbit--bibliotheek)
+  * [Functies in de MicroPython microbit-bibliotheek](#functies-in-de-micropython--microbit--bibliotheek)
   * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython--microbit-)
     
 ## Microcontrollers
@@ -180,7 +180,7 @@ Deze bibliotheek bevindt zich op de micro:bit en is onderdeel van de firmware va
 
 - De **firmware** op de micro:bit kan je vergelijken met de BIOS van een computer en regelt alle basisdingen op de micro:bit. Meer over het (updaten van) de firmware staat op https://microbit.org/get-started/user-guide/firmware/.
 
-## Functies in de MicroPython `microbit`-bibliotheek
+## Functies in de MicroPython microbit-bibliotheek
 
 | **Categorie**              | **Functie** | **Alleen micro:bit V2** |
 |----------------------------|------------|-------------------------|
