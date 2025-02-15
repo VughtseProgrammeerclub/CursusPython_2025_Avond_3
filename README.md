@@ -196,6 +196,6 @@ Als je meer wilt weten over al deze functies dan vind je die op https://microbit
 
 Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help()' invoert dan krijg je in de shelle een paar handige links te zien:
 
-![Gebruik helpfunctie](thonny-help-micropython.png)
+![Gebruik helpfunctie](thonny_help_micropython.png)
 
 
