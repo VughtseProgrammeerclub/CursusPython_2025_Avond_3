@@ -8,7 +8,11 @@
   * [De microbitbibliotheek](#de-microbitbibliotheek)
   * [Functies in de MicroPython microbit-bibliotheek](#functies-in-de-micropython-microbit-bibliotheek)
   * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython-microbit)
+
+**Voorbeelden**
+
   * [Voorbeeld Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
+  * [Voorbeeld Stappenteller](#voorbeeld-stappenteller)
     
 ## Microcontrollers
  
@@ -247,10 +251,30 @@ while True:
         keuze = random.choice(["steen", "papier", "schaar"])  # Willekeurige keuze
         
         if keuze == "steen":
-            display.show(Image.SQUARE_SMALL)  # Ingebouwde afbeelding voor steen
+            display.show(Image.SQUARE_SMALL)  # Ingebouwde afbeelding voor klein vierkant
             display.set_pixel(2, 2, 9)        # Zet de middelste LED op maximale helderheid (9)
         elif keuze == "papier":
-            display.show(Image.SQUARE)  # Ingebouwde afbeelding voor papier
+            display.show(Image.SQUARE)        # Ingebouwde afbeelding voor groot vierkant
         else:
-            display.show(Image.SCISSORS)  # Ingebouwde afbeelding voor schaar
+            display.show(Image.SCISSORS)      # Ingebouwde afbeelding voor schaar
+```
+## Voorbeeld stappenteller
+
+[⬆️](#inhoud)
+
+```python
+from microbit import *
+
+stappen = 0  # Variabele om het aantal stappen bij te houden
+
+while True:
+    if accelerometer.was_gesture("shake"):  # Detecteert een schudbeweging
+        stappen += 1  # Verhoog de stap-teller
+
+    if button_a.was_pressed():  # Knop A ingedrukt → Toon het aantal stappen
+        display.show(str(stappen))  # Converteer het getal naar een string
+    
+    if button_b.was_pressed():  # Knop B ingedrukt → Reset de teller
+        stappen = 0
+        display.clear()  # Wis het scherm
 ```
