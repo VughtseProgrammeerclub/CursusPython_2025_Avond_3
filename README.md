@@ -8,6 +8,7 @@
   * [De microbitbibliotheek](#de-microbitbibliotheek)
   * [Functies in de MicroPython microbit-bibliotheek](#functies-in-de-micropython-microbit-bibliotheek)
   * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython-microbit)
+  * [Voorbeeld Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
     
 ## Microcontrollers
  
@@ -231,3 +232,25 @@ Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help(
 | **Attribuut** | Een variabele in een object | `accelerometer.get_x()`, `pin0.read_analog()` |
 | **Module**   | Een Python-bestand met functies en klassen | `microbit`, `servo`, `neopixel` |
 
+# Voorbeelden
+## Voorbeeld Steen Papier Schaar
+
+[⬆️](#inhoud)
+
+```python
+from microbit import *
+import random
+
+display.clear()  # Maak het scherm leeg
+while True:
+    if accelerometer.was_gesture("shake"):  # Detecteert schudbeweging
+        keuze = random.choice(["steen", "papier", "schaar"])  # Willekeurige keuze
+        
+        if keuze == "steen":
+            display.show(Image.SQUARE_SMALL)  # Ingebouwde afbeelding voor steen
+            display.set_pixel(2, 2, 9)        # Zet de middelste LED op maximale helderheid (9)
+        elif keuze == "papier":
+            display.show(Image.SQUARE)  # Ingebouwde afbeelding voor papier
+        else:
+            display.show(Image.SCISSORS)  # Ingebouwde afbeelding voor schaar
+```
