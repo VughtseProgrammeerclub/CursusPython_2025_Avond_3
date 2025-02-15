@@ -26,8 +26,10 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 | ![RPi Pico](Raspberry_Pi_Pico_top_and_bottom-1200.jpg) | ![ESP32](SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg) | ![micro:bit](microbit-overview-1-5-1200.png)           |
 |Dit is de eenvoudigste uitvoering. Er zijn ook nieuwere uitvoeringen met o.a. WiFi.|Dit is maar één voorbeeld, er bestaan vele uitvoeren van ESP32's.|Dit is V1-uitvoering (de originele), inmiddels is er ook een V2-uitvoering met een luidspreker, microfoon en meer geheugen.|
 
-## Python vs MicroPython  
+## Python vs MicroPython
+
 [⬆️](#inhoud)
+
 |**Kenmerk**               |**Python**                      |**MicroPython**                   |
 |:-------------------------|:-------------------------------|:------------------------------------|
 | **Doelgroep**            | Algemeen gebruik op computers  | Microcontrollers (zoals micro:bit, ESP32) |
@@ -41,7 +43,9 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 | **Stroomverbruik**       | Geen beperkingen              | Laag energieverbruik voor embedded systemen |
 
 ## Interpreter
+
 [⬆️](#inhoud)
+
 De *MicroPython interpreter* is een programma dat MicroPython-code direct uitvoert op een microcontroller, zoals de BBC micro:bit, ESP32 of Raspberry Pi Pico.
 
 MicroPython is speciaal ontworpen voor kleine, embedded systemen met beperkte rekenkracht en geheugen. In tegenstelling tot het gewone Python, draait het zonder besturingssysteem en werkt het direct met de hardware.
@@ -81,7 +85,9 @@ In deze cursus hebben we tot nu toe gewerkt met Thonny en hier gaan we nu ook me
 
 De MicroPython interpreter wordt opgeslagen in het flash-geheugen van de microcontroller. Dit betekent dat het 'bestand' van buitenaf niet zichtbaar/toegangelijk is (zie verderop de beschrijving van het Thonny-venster *Files*). Op de micro:bit kan je de interpreter verwijderen door in de programeeromgeving https://makecode.microbit.org/ een programma te schrijven en dit vanuit die omgeving te uploaden naar de micro:bit. Je kan ook een hex-bestand dat gemaakt is in MakeCode via de Windows verkenner kopiëren naar de micri:bit. Dit overschrijft alles wat eerder met Thonny op de micro:bit is gezet.
 
-## Thonny en de micro:bit  [⬆️](#inhoud)
+## Thonny en de micro:bit
+
+[⬆️](#inhoud)
 
 We hebben het hiervoor al even gehad over Thonny en de micro:bit. We kijken eerst nog even naar de belangrijkste vensters in Thonny, we gaan een micro:bit aansluiten, de interpreter installeren en ons eerste MicroPython-programma op de micro:bit zetten.
 
@@ -160,7 +166,9 @@ while True:
 
 Klik op de groene knop ![Startknop](thonny_startknop.png)  of druk op de toets [F5].
 
-## Niet vergeten: Opslaan  [⬆️](#inhoud)
+## Niet vergeten: Opslaan
+
+[⬆️](#inhoud)
 
 Kies in het menu *File > Save as...*
 
@@ -172,7 +180,9 @@ Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de mi
 
 Het programma is opgeslagen op de computer **en** op de micro:bit zelf.
 
-## De microbitbibliotheek  [⬆️](#inhoud)
+## De microbitbibliotheek
+
+[⬆️](#inhoud)
 
 De eerste regel van het programma is:
 ```python
@@ -182,7 +192,9 @@ Deze bibliotheek bevindt zich op de micro:bit en is onderdeel van de firmware va
 
 - De **firmware** op de micro:bit kan je vergelijken met de BIOS van een computer en regelt alle basisdingen op de micro:bit. Meer over het (updaten van) de firmware staat op https://microbit.org/get-started/user-guide/firmware/.
 
-## Functies in de MicroPython microbit-bibliotheek [⬆️](#inhoud)
+## Functies in de MicroPython microbit-bibliotheek
+
+[⬆️](#inhoud)
 
 | **Categorie**              | **Functie** | **Alleen micro:bit V2** |
 |----------------------------|------------|-------------------------|
@@ -204,7 +216,9 @@ Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help(
 
 ![Gebruik helpfunctie](thonny_help_micropython.png)
 
-## Basisbegrippen in MicroPython (microbit)  [⬆️](#inhoud)
+## Basisbegrippen in MicroPython (microbit)
+
+[⬆️](#inhoud)
 
 | **Begrip**     | **Wat is het?** | **Voorbeeld in MicroPython** |
 |--------------|---------------|------------------------|
