@@ -11,8 +11,8 @@
 
 **Voorbeelden**
 
-  * [Voorbeeld Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
-  * [Voorbeeld Stappenteller](#voorbeeld-stappenteller)
+  * [Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
+  * [Stappenteller](#voorbeeld-stappenteller)
     
 ## Microcontrollers
  
