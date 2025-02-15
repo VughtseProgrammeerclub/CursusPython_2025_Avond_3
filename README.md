@@ -4,7 +4,7 @@
   * [Python vs MicroPython](#python-vs-micropython)
   * [Interpreter](#interpreter)
   * [Thonny en de micro:bit](#thonny-en-de-microbit)
-  * [Niet vergeten: Opslaan](#niet-vergeten--opslaan)
+  * [Niet vergeten: Opslaan](#niet-vergeten-opslaan)
   * [De microbitbibliotheek](#de-microbitbibliotheek)
   * [Functies in de MicroPython microbit-bibliotheek](#functies-in-de-micropython--microbit--bibliotheek)
   * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython--microbit-)
