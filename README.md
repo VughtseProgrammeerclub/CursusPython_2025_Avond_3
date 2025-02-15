@@ -166,4 +166,31 @@ Je hebt de keuze om het programma op te slaan **op jouw computer** of **op de mi
 
 Het programma is opgeslagen op de computer **en** op de micro:bit zelf.
 
+## De microbitbibliotheek
+
+De eerste regel van het programma is:
+```python
+from microbit import *
+```
+Deze bibliotheek bevindt zich op de micro:bit en is onderdeel van de firmware van de micro:bit.
+
+- De **firmware** op de micro:bit kan je vergelijken met de BIOS van een computer en regelt alle basisdingen op de micro:bit. Meer over het (updaten van) de firmware staat op https://microbit.org/get-started/user-guide/firmware/.
+
+## Functies in de MicroPython `microbit`-bibliotheek
+
+| **Categorie**              | **Functie** | **Alleen micro:bit V2** |
+|----------------------------|------------|-------------------------|
+| **Algemeen**               | `sleep(ms)`, `running_time()`, `reset()`, `temperature()` | `power.off()` |
+| **Display (`display`)**    | `display.show(image)`, `display.scroll(text, delay, wait, loop, monospace)`, `display.clear()`, `display.on()`, `display.off()`, `display.get_pixel(x, y)`, `display.set_pixel(x, y, brightness)` |  |
+| **Knoppen (`button_a`, `button_b`)** | `button_a.is_pressed()`, `button_b.is_pressed()`, `button_a.was_pressed()`, `button_b.was_pressed()`, `button_a.get_presses()`, `button_b.get_presses()` |  |
+| **Afbeeldingen (`Image`)** | `Image.HEART`, `Image.HAPPY`, `Image.SAD`, `Image.SMILE`, `Image.SURPRISED`, `Image.ANGRY`, `Image.ALL_CLOCKS`, `Image.ALL_ARROWS`, `Image(width, height, pixels)`, `Image.invert()`, `Image.shift_left(n)`, `Image.shift_right(n)`, `Image.shift_up(n)`, `Image.shift_down(n)`, `Image.copy()` |  |
+| **Pinnen (`pin0` - `pin16`)** | `pinX.read_digital()`, `pinX.write_digital(value)`, `pinX.read_analog()`, `pinX.write_analog(value)`, `pinX.set_pull(mode)`, `pinX.is_touched()` | `pinX.audio.play_tone(frequency, duration)`, `pinX.audio.stop()` |
+| **Kompas (`compass`)**     | `compass.calibrate()`, `compass.heading()`, `compass.get_x()`, `compass.get_y()`, `compass.get_z()`, `compass.is_calibrated()`, `compass.clear_calibration()` |  |
+| **Versnellingsmeter (`accelerometer`)** | `accelerometer.get_x()`, `accelerometer.get_y()`, `accelerometer.get_z()`, `accelerometer.current_gesture()`, `accelerometer.is_gesture(name)`, `accelerometer.was_gesture(name)`, `accelerometer.get_gestures()` |  |
+| **Muziek (`music`)**       | `music.play(melody, pin, wait, loop)`, `music.pitch(frequency, duration, pin)`, `music.stop()`, `music.reset()`, `music.set_tempo(ticks, bpm)`, `music.get_tempo()`, `music.DADADADUM`, `music.ENTERTAINER`, `music.PRELUDE`, `music.ODE`, `music.NYAN`, `music.RINGTONE`, `music.FUNK`, `music.BLUES`, `music.BIRTHDAY`, `music.WEDDING`, `music.FUNERAL`, `music.PUNCHLINE`, `music.PYTHON`, `music.BADDY`, `music.CHASE`, `music.BA_DING`, `music.WAWAWAWAA`, `music.JUMP_UP`, `music.JUMP_DOWN`, `music.POWER_UP`, `music.POWER_DOWN` | `music.set_speaker_enabled(state)`, `music.is_speaker_enabled()` |
+| **Radio (`radio`)**        | `radio.on()`, `radio.off()`, `radio.send(message)`, `radio.receive()`, `radio.config(channel, power, queue, data_rate, length, group)` |  |
+| **Luidspreker (`audio`)**  |  | `audio.play(source, pin, wait, loop)`, `audio.stop()`, `audio.is_playing()` |
+| **Touch-sensor (`touch`)** |  | `touch.pinX.is_touched()` |
+
+
 
