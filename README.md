@@ -198,7 +198,7 @@ Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help(
 
 ![Gebruik helpfunctie](thonny_help_micropython.png)
 
-## Basisbegrippen in MicroPython (`microbit`)
+## Basisbegrippen in MicroPython (microbit)
 
 | **Begrip**     | **Wat is het?** | **Voorbeeld in MicroPython** |
 |--------------|---------------|------------------------|
