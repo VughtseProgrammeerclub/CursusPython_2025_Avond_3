@@ -198,4 +198,16 @@ Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help(
 
 ![Gebruik helpfunctie](thonny_help_micropython.png)
 
+## Basisbegrippen in MicroPython (`microbit`)
+
+| **Begrip**     | **Wat is het?** | **Voorbeeld in MicroPython** |
+|--------------|---------------|------------------------|
+| **Object**   | Een instantie van een klasse | `display`, `compass`, `accelerometer` |
+| **Klasse**   | Een blauwdruk voor objecten | `Image` |
+| **Instantie** | Een specifiek object gemaakt van een klasse | `Image.HEART`, `pin0` |
+| **Methode**  | Een functie die bij een object hoort | `display.show()`, `accelerometer.get_x()` |
+| **Eigenschap** | Een waarde binnen een object | `compass.heading`, `pin0.is_touched` |
+| **Functie**  | Een zelfstandige blok code | `sleep(1000)`, `print("Hallo")` |
+| **Attribuut** | Een variabele in een object | `accelerometer.get_x()`, `pin0.read_analog()` |
+| **Module**   | Een Python-bestand met functies en klassen | `microbit`, `servo`, `neopixel` |
 
