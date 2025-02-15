@@ -192,5 +192,10 @@ Deze bibliotheek bevindt zich op de micro:bit en is onderdeel van de firmware va
 | **Luidspreker (`audio`)**  |  | `audio.play(source, pin, wait, loop)`, `audio.stop()`, `audio.is_playing()` |
 | **Touch-sensor (`touch`)** |  | `touch.pinX.is_touched()` |
 
+Als je meer wilt weten over al deze functies dan vind je die op https://microbit-micropython.readthedocs.io/
+
+Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help()' invoert dan krijg je in de shelle een paar handige links te zien:
+
+![Gebruik helpfunctie](thonny-help-micropython.png)
 
 
