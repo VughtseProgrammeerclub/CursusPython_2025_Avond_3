@@ -271,10 +271,12 @@ while True:
     if accelerometer.was_gesture("shake"):  # Detecteert een schudbeweging
         stappen += 1  # Verhoog de stap-teller
 
-    if button_a.was_pressed():  # Knop A ingedrukt → Toon het aantal stappen
-        display.show(str(stappen))  # Converteer het getal naar een string
+    if button_a.was_pressed():        # Knop A ingedrukt
+        display.scroll(str(stappen))  # Scroll het getal
     
-    if button_b.was_pressed():  # Knop B ingedrukt → Reset de teller
-        stappen = 0
-        display.clear()  # Wis het scherm
+    if button_b.was_pressed():        # Knop B ingedrukt
+        stappen = 0                   # Reset de teller
+
+
+
 ```
