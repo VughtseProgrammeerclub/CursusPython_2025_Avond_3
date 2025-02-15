@@ -26,7 +26,8 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 | ![RPi Pico](Raspberry_Pi_Pico_top_and_bottom-1200.jpg) | ![ESP32](SparkFun-Thing-Plus-ESP32-C6-Top-Bottom.jpg) | ![micro:bit](microbit-overview-1-5-1200.png)           |
 |Dit is de eenvoudigste uitvoering. Er zijn ook nieuwere uitvoeringen met o.a. WiFi.|Dit is maar één voorbeeld, er bestaan vele uitvoeren van ESP32's.|Dit is V1-uitvoering (de originele), inmiddels is er ook een V2-uitvoering met een luidspreker, microfoon en meer geheugen.|
 
-## Python vs MicroPython  [⬆️](#inhoud)
+## Python vs MicroPython  
+[⬆️](#inhoud)
 |**Kenmerk**               |**Python**                      |**MicroPython**                   |
 |:-------------------------|:-------------------------------|:------------------------------------|
 | **Doelgroep**            | Algemeen gebruik op computers  | Microcontrollers (zoals micro:bit, ESP32) |
@@ -39,7 +40,8 @@ Microcontrollers worden veel gebruikt in elektronica, IoT en educatie.
 | **I/O-mogelijkheden**    | Bestanden, netwerken, databases | Directe controle over hardware (GPIO, I2C, SPI, etc.) |
 | **Stroomverbruik**       | Geen beperkingen              | Laag energieverbruik voor embedded systemen |
 
-## Interpreter  [⬆️](#inhoud)
+## Interpreter
+[⬆️](#inhoud)
 De *MicroPython interpreter* is een programma dat MicroPython-code direct uitvoert op een microcontroller, zoals de BBC micro:bit, ESP32 of Raspberry Pi Pico.
 
 MicroPython is speciaal ontworpen voor kleine, embedded systemen met beperkte rekenkracht en geheugen. In tegenstelling tot het gewone Python, draait het zonder besturingssysteem en werkt het direct met de hardware.
