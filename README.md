@@ -1,5 +1,10 @@
 # CursusPython 2025 - Avond 3 - MicroPython
 
+  * [Microcontrollers](#microcontrollers)
+  * [Python vs MicroPython](#python-vs-micropython)
+  * [Interpreter](#interpreter)
+  * [Thonny en de micro:bit](#thonny-en-de-micro-bit)
+  * [Niet vergeten: Opslaan](#niet-vergeten--opslaan)
 ## Microcontrollers
 
 Een microcontroller is een compacte schakeling met een processor, geheugen en I/O (Input/Output), gebruikt voor het aansturen van sensoren en motoren.
