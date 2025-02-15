@@ -5,6 +5,10 @@
   * [Interpreter](#interpreter)
   * [Thonny en de micro:bit](#thonny-en-de-micro-bit)
   * [Niet vergeten: Opslaan](#niet-vergeten--opslaan)
+  * [De microbitbibliotheek](#de-microbitbibliotheek)
+  * [Functies in de MicroPython `microbit`-bibliotheek](#functies-in-de-micropython--microbit--bibliotheek)
+  * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython--microbit-)
+    
 ## Microcontrollers
 
 Een microcontroller is een compacte schakeling met een processor, geheugen en I/O (Input/Output), gebruikt voor het aansturen van sensoren en motoren.
