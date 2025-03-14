@@ -7,13 +7,16 @@
   * [Niet vergeten: Opslaan](#niet-vergeten-opslaan)
   * [De microbitbibliotheek](#de-microbitbibliotheek)
   * [Functies in de MicroPython microbit-bibliotheek](#functies-in-de-micropython-microbit-bibliotheek)
-  * [Basisbegrippen in MicroPython (microbit)](#basisbegrippen-in-micropython-microbit)
+  * [Basisbegrippen in MicroPython (micro:bit)](#basisbegrippen-in-micropython-microbit)
 
 **Voorbeelden**
 
   * [Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
   * [Stappenteller](#voorbeeld-stappenteller)
-    
+
+**Raspberry Pi Pico**
+  * [Toch nog even kijken naar de Raspberry Pi Pico](#toch-nog-even-kijken-naar-de-raspberry-pi-pico)
+  
 ## Microcontrollers
  
 Een microcontroller is een compacte schakeling met een processor, geheugen en I/O (Input/Output), gebruikt voor het aansturen van sensoren en motoren.
@@ -277,7 +280,82 @@ while True:
     if button_b.was_pressed():        # Knop B ingedrukt
         stappen = 0                   # Reset de teller
 ```
+## Voorbeeld neopixels
 
+```python
+from microbit import *
+import neopixel
+
+# Overzicht van kleuren (RGB-waarden)
+# Rood:       (255, 0, 0)
+# Groen:      (0, 255, 0)
+# Blauw:      (0, 0, 255)
+# Geel:       (255, 255, 0)
+# Cyaan:      (0, 255, 255)
+# Magenta:    (255, 0, 255)
+# Wit:        (255, 255, 255)
+# Oranje:     (255, 165, 0)
+# Paars:      (128, 0, 128)
+
+# Aantal LED's en helderheid instellen
+NUM_PIXELS = 8  # Pas dit aan als je een andere strip hebt
+BRIGHTNESS = 0.2  # Tussen 0.0 (uit) en 1.0 (max)
+
+# NeoPixel-strip op pin0
+np = neopixel.NeoPixel(pin0, NUM_PIXELS)
+
+# Beginwaarden
+position = 0
+direction = 1  # 1 = vooruit, -1 = achteruit
+kleur_pixel = (0, 0, 255)  # Blauw bewegende pixel
+
+while True:
+    # Als knop A wordt ingedrukt: Oeteldonkse vlag (Rood-Wit-Geel)
+    if button_a.is_pressed():
+        np[0]=(int(255 * BRIGHTNESS), 0, 0)
+        np[1]=(int(255 * BRIGHTNESS), 0, 0)
+        np[2]=(int(255 * BRIGHTNESS), 0, 0)
+        np[3]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), int(255 * BRIGHTNESS))
+        np[4]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), int(255 * BRIGHTNESS))
+        np[5]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np[6]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np[7]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np.show()
+        while button_a.is_pressed():  # Wachten tot knop losgelaten wordt
+            sleep(10)
+    
+    # Als knop B wordt ingedrukt: Dommeldurpse vlag (Blauw-Geel)
+    if button_b.is_pressed():
+        np[0]=(0, 0, int(255 * BRIGHTNESS))
+        np[1]=(0, 0, int(255 * BRIGHTNESS))
+        np[2]=(0, 0, int(255 * BRIGHTNESS))
+        np[3]=(0, 0, int(255 * BRIGHTNESS))
+        np[4]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np[5]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np[6]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np[7]=(int(255 * BRIGHTNESS), int(255 * BRIGHTNESS), 0)
+        np.show()
+        while button_b.is_pressed():  # Wachten tot knop losgelaten wordt
+            sleep(10)
+    
+    # Bewegende pixel laten zien
+    for i in range(NUM_PIXELS):
+        np[i] = (0, 0, 0)  # Eerst alles uitzetten
+    np[position] = (int(kleur_pixel[0] * BRIGHTNESS), 
+                    int(kleur_pixel[1] * BRIGHTNESS), 
+                    int(kleur_pixel[2] * BRIGHTNESS))  # Pas helderheid toe
+    np.show()
+    sleep(100)
+
+    # Beweeg pixel vooruit of achteruit
+    position += direction
+
+    # Keer om als de rand is bereikt
+    if position == NUM_PIXELS - 1 or position == 0:
+        direction *= -1
+
+
+```
 # Toch nog even kijken naar de Raspberry Pi Pico
 
 [⬆️](#inhoud)
@@ -295,8 +373,16 @@ Om er zeker van te zijn dat we met een 'schone' RPi Pico beginnen resetten we he
 
 1. Start Thonny
 2. Ga via _Run_ > _Configure interpreter ..._ naar
-![RPi Pico](RPi_Pico_1.png)
-   
+
+![RPi Pico](RPi_Pico_1a.png)
+
+Klik op _Install or update MicroPython_
+
+![RPi Pico](RPi_Pico_2.png)
+
+Selecteer de versie van jouw Raspberry Pi Pico en klik op _Install_.
+
+## 3. Schrijf een programma
 
 ```python
 import machine
