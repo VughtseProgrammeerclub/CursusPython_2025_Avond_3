@@ -284,9 +284,9 @@ while True:
 
 [⬆️](#inhoud)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VMRQ5fnEkFBadS6m" frameborder="0" allowfullscreen></iframe>
+[YouTube](https://youtu.be/2VhmL20t-AE?si=9jjSz7LxkxqZb0ku)
 
-In dit voorbeeld moet je een Neopixelstrip aansluiten
+In dit voorbeeld moet je een Neopixelstrip aansluiten.
 
 ```python
 from microbit import *
