@@ -13,6 +13,7 @@
 
   * [Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
   * [Stappenteller](#voorbeeld-stappenteller)
+  * [Neopixels](#voorbeeld-neopixels)
 
 **Raspberry Pi Pico**
   * [Toch nog even kijken naar de Raspberry Pi Pico](#toch-nog-even-kijken-naar-de-raspberry-pi-pico)
