@@ -13,6 +13,7 @@
 
   * [Steen Papier Schaar](#voorbeeld-steen-papier-schaar)
   * [Stappenteller](#voorbeeld-stappenteller)
+  * [Waterpas](#voorbeeld-waterpas)
   * [Neopixels](#voorbeeld-neopixels)
 
 **Raspberry Pi Pico**
@@ -281,6 +282,45 @@ while True:
     if button_b.was_pressed():        # Knop B ingedrukt
         stappen = 0                   # Reset de teller
 ```
+## Voorbeeld waterpas
+
+[⬆️](#inhoud)
+
+De led op het 5x5 display van de micro:bit beweegt mee met de stand van de micro:bit.
+
+```python
+from microbit import *
+import utime
+
+# Definieer de variabelen voor de LED positie
+x_pos = 2  # Start op het midden van de 5x5 matrix
+y_pos = 2
+
+while True:
+    # Verkrijg de versnellingsmeterwaarden
+    x = accelerometer.get_x()
+    y = accelerometer.get_y()
+
+    # Beweeg de LED horizontaal (x-as) en verticaal (y-as)
+    if x > 200:
+        x_pos = min(x_pos + 1, 4)  # Beweeg naar rechts, maar niet buiten de matrix
+    elif x < -200:
+        x_pos = max(x_pos - 1, 0)  # Beweeg naar links, maar niet buiten de matrix
+
+    if y > 200:
+        y_pos = min(y_pos + 1, 4)  # Beweeg naar beneden, maar niet buiten de matrix
+    elif y < -200:
+        y_pos = max(y_pos - 1, 0)  # Beweeg naar boven, maar niet buiten de matrix
+
+    # Toon de LED op de nieuwe positie
+    display.clear()  # Maak het display leeg
+    display.set_pixel(x_pos, y_pos, 9)  # Zet de LED op de nieuwe positie
+
+    # Wacht kort voordat de volgende meting wordt gedaan
+    utime.sleep(0.1)
+```
+
+
 ## Voorbeeld neopixels
 
 [⬆️](#inhoud)
