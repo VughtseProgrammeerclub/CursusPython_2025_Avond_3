@@ -86,9 +86,9 @@ In deze cursus hebben we tot nu toe gewerkt met Thonny en hier gaan we nu ook me
 - **Thonny** zal de interpreter bij de eerste keer dat je een programma op de microcontroller wilt uitvoeren direct proberen te uploaden. Als dit niet lukt dan kan je de interpreter zelf vanuit Thonny in het flashgeheugen van de microcontroller zetten. We komen hier nog op terug.
 - Bij **andere programmeeromgevingen** moet je de interpreter handmatig installeren.
   
-**Kan ik de MicroPython interpreter ook weer verwijderen?**
+**Kan ik de MicroPython interpreter ook weer van de micro:bit verwijderen?**
 
-De MicroPython interpreter wordt opgeslagen in het flash-geheugen van de microcontroller. Dit betekent dat het 'bestand' van buitenaf niet zichtbaar/toegangelijk is (zie verderop de beschrijving van het Thonny-venster *Files*). Op de micro:bit kan je de interpreter verwijderen door in de programeeromgeving https://makecode.microbit.org/ een programma te schrijven en dit vanuit die omgeving te uploaden naar de micro:bit. Je kan ook een hex-bestand dat gemaakt is in MakeCode via de Windows verkenner kopiëren naar de micri:bit. Dit overschrijft alles wat eerder met Thonny op de micro:bit is gezet.
+De MicroPython interpreter wordt opgeslagen in het flash-geheugen van de microcontroller. Dit betekent dat het 'bestand' van buitenaf niet zichtbaar/toegangelijk is (zie verderop de beschrijving van het Thonny-venster *Files*). Op de micro:bit kan je de interpreter verwijderen door in de programeeromgeving https://makecode.microbit.org/ een programma te schrijven en dit vanuit die omgeving te uploaden naar de micro:bit. Je kan ook een hex-bestand dat gemaakt is in MakeCode via de Windows verkenner kopiëren naar de micro:bit. Dit overschrijft alles wat eerder met Thonny op de micro:bit is gezet.
 
 ## Thonny en de micro:bit
 
@@ -236,7 +236,7 @@ Je hoeft de URL niet uit je hoofd te leren! Als je in de Shell van Thonny 'help(
 | **Attribuut** | Een variabele in een object | `accelerometer.get_x()`, `pin0.read_analog()` |
 | **Module**   | Een Python-bestand met functies en klassen | `microbit`, `servo`, `neopixel` |
 
-# Voorbeelden
+# Voorbeelden micro:bit
 ## Voorbeeld Steen Papier Schaar
 
 [⬆️](#inhoud)
@@ -276,7 +276,37 @@ while True:
     
     if button_b.was_pressed():        # Knop B ingedrukt
         stappen = 0                   # Reset de teller
+```
 
+# Toch nog even kijken naar de Raspberry Pi Pico
 
+[⬆️](#inhoud)
 
+Een groot deel van wat hierboven staat heeft ook betrekking op de Raspberry Pi Pico. We laten daarom ook zien hoe je MicroPython op een Raspberry Pi Pico aan de gang krijgt.
+
+## 1. Raspberry Pi Pico resetten
+
+Om er zeker van te zijn dat we met een 'schone' RPi Pico beginnen resetten we hem eerst. Dit doe je door: 
+1. het bestand *flash_nuke.uf2* te downloaden vanaf https://datasheets.raspberrypi.com/soft/flash_nuke.uf2;
+2. de RPi Pico aan te sluiten op de laptop, waarbij je de knop BOOTSEL ingedrukt houdt;
+3. het bestand *flash_nuke.uf2* in de Windows verkenner naar de schijf _RPI-RP2_ te slepen.
+
+## 2. Instellen Thonny en installeren firmware
+
+1. Start Thonny
+2. Ga via _Run_ > _Configure interpreter ..._ naar
+   
+
+```python
+import machine
+import time
+
+# Stel de ingebouwde LED in op pin 25
+led = machine.Pin(25, machine.Pin.OUT)
+
+while True:
+    led.value(1)  # Zet de LED aan
+    time.sleep(0.5)  # Wacht 1 seconde
+    led.value(0)  # Zet de LED uit
+    time.sleep(0.25)  # Wacht 1 seconde
 ```
