@@ -282,6 +282,10 @@ while True:
 ```
 ## Voorbeeld neopixels
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2VhmL20t-AE?si=VMRQ5fnEkFBadS6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+In dit voorbeeld moet je een Neopixelstrip aansluiten
+
 ```python
 from microbit import *
 import neopixel
