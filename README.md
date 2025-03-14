@@ -295,6 +295,7 @@ Om er zeker van te zijn dat we met een 'schone' RPi Pico beginnen resetten we he
 
 1. Start Thonny
 2. Ga via _Run_ > _Configure interpreter ..._ naar
+![RPi Pico](RPi_Pico_1.png)
    
 
 ```python
